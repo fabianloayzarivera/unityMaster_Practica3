@@ -18,7 +18,7 @@ public class Gun : MonoBehaviour {
 			Debug.Log ("fire!");
 
 			GameObject shot = Instantiate (projectile, gameObject.transform.position, Quaternion.identity) as GameObject;
-			shot.GetComponent<Rigidbody> ().AddForce (gameObject.transform.forward * 1000);
+			shot.GetComponent<Rigidbody> ().AddForce (gameObject.transform.forward * 10000);
 		}
 	}
 }
